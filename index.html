@@ -39,7 +39,7 @@
             </p>
         </div>
         <div>
-            <p>Unfinished business: <br>
+            <p>Unfinished business:</p>
                 <ul>
                     <li>
                         <strong> Need to find replacement for Rick as he is leaving next week
@@ -49,10 +49,9 @@
                         Spongebob <b>still </b> needs help with customer service
                     </li>
                 </ul>
-            </p>
         </div>
         <div>
-            <p> New business: <br>
+            <p> New business: </p>
                 <ul>
                     <li>
                      Need script to present project to Powell
@@ -61,12 +60,9 @@
                     Everyone is participating and progress is going well
                     </li>
                 </ul>
-            </p>
         </div>
         <div>
-            <p> Video and audio recording of meeting: <br>
-
-            </p>
+            <p> Video and audio recording of meeting: </p>
         </div>
         <form>
             <fieldset>
@@ -75,12 +71,25 @@
                 </p>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>   
-                <input type="text" id="email" name="email"><br><br>
+                <label for="email">Email:</label>  
+                <input list="emails" name="email" id="email">
+                <datalist id="emails">
+                    <option value="rickandmorty@gmail.com">
+                    <option value="bobsburgers@yahoo.com">
+                    <option value="spongebobsquarepants@aol.com">
+                    <option value="familyguy@outlook.com">
+                </datalist> <br><br>
+                <label for="comments">Additonal comments</label>
+                <textarea id="comments">No comments allowed at this time.</textarea> <br><br>
                 <button>Submit</button> <br><br>
                 <input type="date">
                 <p> Did you enjoy this experience?</p>
-                <input type="checkbox">
+                <input type="radio" id="yes1" name ="yes"> 
+                <label for="yes1">Yes</label> <br>
+                <input type="radio" id="yes2" name ="yes">
+                <label for="yes2">Yes</label> <br><br>
+                <input type="checkbox" id="check" name = "check">
+                <label for="check">Fun Checkbox!</label>
             </fieldset>
           </form>
         <footer>
